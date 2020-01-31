@@ -47,6 +47,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -70,6 +71,27 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Cls_Mysql.vb" />
+    <Compile Include="Class\Cls_Sage.vb" />
+    <Compile Include="Modal\ModalBarang.Designer.vb">
+      <DependentUpon>ModalBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\ModalBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataFulling.Designer.vb">
+      <DependentUpon>DataFulling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataFulling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Fulling.Designer.vb">
+      <DependentUpon>Fulling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fulling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modul\Modul.vb" />
     <Compile Include="View\Dashboard.Designer.vb">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </Compile>
@@ -91,6 +113,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="View\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View\MasterBarang.Designer.vb">
       <DependentUpon>MasterBarang.vb</DependentUpon>
     </Compile>
@@ -99,6 +127,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Modal\ModalBarang.resx">
+      <DependentUpon>ModalBarang.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +138,18 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataFulling.resx">
+      <DependentUpon>DataFulling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Fulling.resx">
+      <DependentUpon>Fulling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MasterBarang.resx">
+      <DependentUpon>MasterBarang.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
